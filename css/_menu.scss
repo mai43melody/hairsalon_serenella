@@ -42,6 +42,10 @@
             text-align: center;
             padding: 3rem 0;
             font-size: 1.5rem;
+            @media (max-width : 390px) {
+                font-size: 1rem;
+                padding: 3rem 0 1rem;
+            }
         }
 
         .salonMenuText {
@@ -139,6 +143,10 @@
         text-align: center;
         padding: 3rem 0;
         font-size: 1.5rem;
+        @media (max-width : 390px) {
+            font-size: 1rem;
+            padding: 3rem 0 1rem;
+        }
     }
 
     .itemMenuText {

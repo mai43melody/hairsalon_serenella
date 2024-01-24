@@ -419,6 +419,16 @@ h2 {
   font-size: 2.5rem;
   font-family: "Sorts Mill Goudy", serif;
 }
+@media (max-width: 740px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 740px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
 
 .hidden {
   overflow: hidden;
@@ -843,6 +853,12 @@ header h1 {
   padding: 3rem 0;
   font-size: 1.5rem;
 }
+@media (max-width: 390px) {
+  .menuWrap .salonMenu h3 {
+    font-size: 1rem;
+    padding: 3rem 0 1rem;
+  }
+}
 .menuWrap .salonMenu .salonMenuText {
   max-width: 400px;
   text-align: center;
@@ -937,6 +953,12 @@ header h1 {
   text-align: center;
   padding: 3rem 0;
   font-size: 1.5rem;
+}
+@media (max-width: 390px) {
+  .itemMenu h3 {
+    font-size: 1rem;
+    padding: 3rem 0 1rem;
+  }
 }
 .itemMenu .itemMenuText {
   max-width: 400px;
@@ -1124,6 +1146,11 @@ header h1 {
   width: 100%;
   padding: 3rem 0 1rem;
 }
+@media (max-width: 390px) {
+  .newsWrap .newsWrapper .newsBox {
+    gap: 1.5rem;
+  }
+}
 .newsWrap .newsWrapper .newsBox .banner {
   width: 60%;
   margin: 0 auto;
@@ -1139,6 +1166,12 @@ header h1 {
   text-align: center;
   padding: 3rem 0;
   font-size: 1.5rem;
+}
+@media (max-width: 390px) {
+  .newsWrap .newsWrapper .newsBox h3 {
+    font-size: 1rem;
+    padding: 3rem 0 1rem;
+  }
 }
 .newsWrap .newsWrapper .newsBox .topnewsWrap {
   display: flex;
@@ -1158,6 +1191,11 @@ header h1 {
 @media (max-width: 550px) {
   .newsWrap .newsWrapper .newsBox .topnewsWrap {
     width: 100%;
+  }
+}
+@media (max-width: 390px) {
+  .newsWrap .newsWrapper .newsBox .topnewsWrap {
+    margin: 0 auto;
   }
 }
 .newsWrap .newsWrapper .newsBox .topnewsWrap .topnewsBox {
@@ -1364,4 +1402,5 @@ footer p {
   height: 30%;
   text-align: center;
   margin: 0 auto;
+  font-family: "Sorts Mill Goudy", serif;
 }/*# sourceMappingURL=style.css.map */
