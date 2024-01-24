@@ -1,0 +1,220 @@
+@use 'variable' as v;
+
+.newsWrap {
+    // background-color: var(--palepurple);
+    background-color: v.$palepurple;
+
+    .newsWrapper {
+        width: 62.5%;
+        margin: 0 auto;
+
+        @media (max-width : 1000px) {
+            width: 85%;
+        }
+
+
+        .newsBox {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            text-align: center;
+            width: 100%;
+            padding: 3rem 0 1rem;
+
+
+            .banner {
+                width: 60%;
+                margin: 0 auto;
+                box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+
+                @media (max-width : 780px) {
+                    width: 85%;
+                }
+            }
+
+            h3 {
+                width: 100%;
+                text-align: center;
+                padding: 3rem 0;
+                font-size: 1.5rem;
+            }
+
+            .topnewsWrap {
+                display: flex;
+                width: 80%;
+                height: auto;
+                margin: 0 auto;
+                padding: 0 2rem;
+                gap: 3rem;
+
+                @media (max-width : 760px) {
+                    display: block;
+                    width: 70%;
+                    margin: 2rem auto;
+                }
+
+                @media (max-width : 550px) {
+                    width: 100%;
+                }
+
+                .topnewsBox {
+                    background-color: #FDFCFF;
+                    border: 1px solid v.$line;
+                    border-radius: 1%;
+                    padding: 2rem 1.5rem;
+                    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+
+                    @media (max-width : 760px) {
+                        margin-bottom: 2rem;
+                    }
+
+                    .topnewsImage {
+                        margin-bottom: 2rem;
+                        border-radius: 1%;
+                        overflow: hidden;
+                    }
+
+                    p {
+                        width: 100%;
+                        text-align: start;
+
+                        @media (max-width : 550px) {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+
+
+
+
+        }
+
+        .newsText {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            text-align: center;
+            width: 100%;
+            padding: 3rem 0;
+            line-height: 1.5rem;
+
+            @media (max-width : 340px) {
+                font-size: 0.8rem;
+            }
+
+            ul {
+                display: flex;
+                width: 60%;
+                margin: 0 auto;
+                padding: 0.5rem 0;
+                justify-content: space-between;
+                border-bottom: 1px solid v.$line;
+                @media (max-width : 700px) {
+                    width: 85%;
+                }
+                @media (max-width : 420px) {
+                    padding: 0.3rem 0;
+                }
+
+
+                li {
+                    width: 50%;
+                    text-align: start;
+                    @media (max-width : 650px) {
+                        font-size: 0.8rem;
+                    }
+                    @media (max-width : 420px) {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.saloninfoWrap,
+.SNSWrap {
+    width: 100%;
+    height: auto;
+
+    .saloninfoBox {
+        width: 62.5%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+        padding: 3rem 0;
+
+        @media (max-width : 900px) {
+            width: 85%;
+            aspect-ratio: 1/1.5;
+        }
+        @media (max-width : 400px) {
+            width: 95%;
+            aspect-ratio: 1/1;
+        }
+
+        iframe {
+            width: 100%;
+        }
+
+        p {
+            line-height: 1.25rem;
+            @media (max-width : 470px) {
+                width: 90%;
+                margin: 0 auto;
+                font-size: 0.8rem;
+            }
+            @media (max-width : 360px) {
+                width: 100%;
+                font-size: 0.7rem;
+            }
+        }
+    }
+
+    .SNSBox{
+        width: 62.5%;
+        margin: 0 auto;
+        text-align: center;
+        @media (max-width : 800px) {
+            width: 100%;
+        }
+
+        .XBox{
+            width: 60%;
+            margin: 2rem auto 4rem;
+            @media (max-width : 800px) {
+                width: 80%;
+            }
+
+            .twitter-timeline.twitter-timeline-rendered{
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+.Button {
+    background-color: v.$darkpink;
+    width: 10rem;
+    height: 3rem;
+    margin: 2rem auto;
+
+    text-align: center;
+    display: block;
+    border-radius: 8px;
+    color: #fff;
+    transition: 0.4s;
+    cursor: pointer;
+    box-shadow: (0px 2px 2px rgba(0, 0, 0, 0.25));
+}
+
+.Button:hover {
+    color: v.$darkpink;
+    background-color: #fff;
+    border: 1px solid v.$darkpink;
+}

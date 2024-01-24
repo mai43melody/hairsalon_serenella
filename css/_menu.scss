@@ -1,0 +1,300 @@
+@use 'variable' as v;
+
+.menuWrap {
+    width: 100%;
+    height: auto;
+
+    h2 {
+        width: 100%;
+        /* height: 25vh; */
+        text-align: center;
+        padding: 3rem 0;
+    }
+
+    .salonImage {
+        max-width: 700px;
+        margin: 3rem auto;
+
+        @media (max-width : 700px) {
+            width: 90%;
+        }
+
+        @media (max-width : 400px) {
+            width: 90%;
+            height: auto;
+            aspect-ratio: 1/1;
+            margin: 1rem auto;
+        }
+
+        img {
+            object-position: 0% 50%;
+            object-fit: cover;
+        }
+    }
+
+    .salonMenu {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+
+        h3 {
+            width: 100%;
+            text-align: center;
+            padding: 3rem 0;
+            font-size: 1.5rem;
+        }
+
+        .salonMenuText {
+            max-width: 400px;
+            text-align: center;
+            margin: 0 auto;
+            padding: 1rem 0 0.5rem;
+            font-size: 0.8rem;
+
+            @media (max-width : 380px) {
+                width: 80%;
+                text-align: start;
+            }
+        }
+
+        .salonWrap {
+            width: 62.5%;
+            height: auto;
+            margin: 0 auto;
+            background-color: v.$palepurple;
+            border-radius: 8px;
+            padding: 1rem 2rem 3rem;
+
+            @media (max-width : 940px) {
+                width: 90%;
+            }
+
+            .cutBox,
+            .colorBox,
+            .permBox {
+                margin-bottom: 4rem;
+            }
+
+            h4 {
+                width: 100%;
+                text-align: center;
+                padding: 1rem 0;
+                font-size: 1.2rem;
+                border-bottom: 1.5px solid v.$line;
+            }
+
+            .salonList {
+                display: flex;
+                justify-content: space-between;
+                gap: 3rem;
+                font-weight: 400;
+                font-size: 0.85rem;
+
+                @media (max-width : 940px) {
+                    display: block;
+                }
+
+                .cutList,
+                .colorList,
+                .permList,
+                .otherList {
+                    width: 95%;
+
+                    @media (max-width : 940px) {
+                        width: 100%;
+                    }
+
+                    li {
+                        display: flex;
+                        justify-content: space-between;
+                        height: 2rem;
+                        border-bottom: 0.8px solid v.$line;
+                        align-items: flex-end;
+
+
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+.itemMenu {
+    width: 100%;
+    height: auto;
+    background-image: url(../images/svg/menuline.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    margin: 0 0 4rem;
+
+    @media (max-width : 900px) {
+        background-image: none;
+    }
+
+    h3 {
+        width: 100%;
+        text-align: center;
+        padding: 3rem 0;
+        font-size: 1.5rem;
+    }
+
+    .itemMenuText {
+        max-width: 400px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 1rem 0 3rem;
+        font-size: 0.8rem;
+
+        @media (max-width : 470px) {
+            width: 80%;
+            text-align: start;
+        }
+    }
+
+    .shampooWrap {
+        width: 62.5%;
+        display: flex;
+        gap: 2rem;
+        margin: 0 auto;
+
+        @media (max-width : 1200px) {
+            width: 85%;
+        }
+
+        @media (max-width : 900px) {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .shampooLine {
+        @media (max-width : 900px) {
+            background-image: url(../images/svg/menuline5.svg);
+            background-repeat: no-repeat;
+            background-position: 1% 50%;
+            background-size: contain;
+        }
+
+        .shampooBox {
+            @media (max-width : 900px) {
+                display: flex;
+                width: 70%;
+                height: 400px;
+                margin: 0 auto 2rem;
+            }
+            @media (max-width : 650px) {
+                display: block;
+                height: auto;
+                margin: 0 auto 4rem;
+            }
+            
+
+            .shampooImage1,
+            .shampooImage2,
+            .shampooImage3 {
+                width: 100%;
+                aspect-ratio: 1/1;
+                border-radius: 4%;
+                overflow: hidden;
+
+                @media (max-width : 900px) {
+                    width: 45%;
+                    align-self: flex-start;
+                }
+                @media (max-width : 650px) {
+                    width: 70%;
+                    margin: 0 auto;
+                }
+            }
+
+            .shampooFlower {
+                width: 100%;
+                aspect-ratio: 1/1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                @media (max-width : 900px) {
+                    width: 55%;
+                    align-self: flex-end;
+                }
+                @media (max-width : 650px) {
+                    width: 100%;
+                }
+
+                h5 {
+                    font-size: 1.5rem;
+                    @media (max-width : 450px) {
+                        font-size: 1rem;
+                    }
+                }
+
+                p {
+                    width: 50%;
+                    font-size: 0.88rem;
+                    @media (max-width : 450px) {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .reverse {
+        @media (max-width : 900px) {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .shampooLine:nth-child(2) {
+        @media (max-width : 900px) {
+            transform: scale(-1, 1);
+            .reverse{
+                transform: scale(-1, 1);
+            }
+        }
+    }
+
+    .flower1 {
+        width: 100%;
+        background-image: url(../images/svg/shampoo-green.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        gap: 0.5rem;
+
+        @media (max-width : 900px) {
+            width: 55%;
+        }
+    }
+
+    .flower2 {
+        width: 100%;
+        background-image: url(../images/svg/shampoo-purple.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        gap: 0.5rem;
+
+        @media (max-width : 900px) {
+            width: 55%;
+        }
+    }
+
+    .flower3 {
+        width: 100%;
+        background-image: url(../images/svg/shampoo-orange.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        gap: 0.5rem;
+
+        @media (max-width : 900px) {
+            width: 55%;
+        }
+    }
+}

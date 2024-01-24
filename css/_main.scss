@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+
+/* タイトルのフォントのみ */
+/* font-family: 'Cinzel', serif; */
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #ffffff;
+    color: #2F3336;
+    font-family: 'Noto Serif JP', serif;
+    /* font-family: 'Sorts Mill Goudy', serif; */
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 3rem;
+
+    @media (max-width : 740px) {
+        font-size: 2rem;
+    }
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: 'Sorts Mill Goudy', serif;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.items02,
+.items01 {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: 500ms grid-template-rows ease;
+}
+.open {
+    grid-template-rows: 1fr;
+}

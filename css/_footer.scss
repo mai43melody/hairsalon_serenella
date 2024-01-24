@@ -1,0 +1,35 @@
+@use 'variable' as v;
+
+footer {
+    background-color: v.$palepurple;
+    height: 150px;
+    @media (max-width : 470px) {
+        height: 250px;
+    }
+
+    .footerSNS {
+        width: 62.5%;
+        height: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+
+        .footerIcon {
+            width: 3rem;
+            height: 3rem;
+        }
+
+        .footerLogo{
+            width: 5rem;
+            height: 5rem;
+        }
+    }
+
+    p {
+        width: 62.5%;
+        height: 30%;
+        text-align: center;
+        margin: 0 auto;
+    }
+}

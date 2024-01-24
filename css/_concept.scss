@@ -1,0 +1,114 @@
+@use 'variable' as v;
+
+.conceptWrap {
+    background-color: v.$palepurple;
+
+    .conceptText3 {
+        width: 100%;
+        text-align: center;
+        padding: 5rem 0;
+
+        @media (max-width : 800px) {
+            width: 80%;
+            margin: 0 auto;
+            text-align: start;
+            font-size: 0.8rem;
+        }
+    }
+
+    h2 {
+        width: 100%;
+        text-align: center;
+        padding: 3rem 0;
+    }
+
+    .conceptWrapper {
+        width: 62.5%;
+        height: auto;
+        margin: 0 auto;
+        @media (max-width : 730px) {
+            width: 85%;
+        }
+
+        .conceptBox {
+            max-width: 900px;
+            max-height: 900px;
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            grid-template-rows: repeat(11, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            margin: 0 auto;
+            @media (max-width : 430px) {
+                grid-template-rows: repeat(12, 1fr);
+            }
+
+            .conceptImage1 {
+                grid-area: 1 / 1 / 4 / 5;
+                z-index: 1;
+                border-radius: 8px;
+                overflow: hidden;
+                @media (max-width : 430px) {
+                    grid-area: 1 / 1 / 4 / 6;
+                }
+                
+                img {
+                    object-position: 0% 50%;
+                    object-fit: cover;
+                }
+            }
+
+            .blobs1 {
+                grid-area: 2 / 4 / 6 / 8;
+                @media (max-width : 430px) {
+                    grid-area: 2 / 3 / 7 / 8;
+                }
+            }
+
+            .conceptText1 {
+                grid-area: 4 / 6 / 6 / 10;
+                z-index: 2;
+                @media (max-width : 730px) {
+                    font-size: 0.7rem;
+                }
+                @media (max-width : 430px) {
+                    grid-area: 4 / 5 / 6 / 9;
+                }
+            }
+
+            .conceptImage2{
+                grid-area: 7 / 6 / 10 / 10;
+                z-index: 1;
+                border-radius: 8px;
+                overflow: hidden;
+                @media (max-width : 430px) {
+                    grid-area: 7 / 5 / 10 / 10;
+                }
+
+                img {
+                    object-position: 0% 50%;
+                    object-fit: cover;
+                }
+            }
+
+            .blobs2 {
+                grid-area: 8 / 3 / 12 / 7;
+                @media (max-width : 430px) {
+                    grid-area: 8 / 3 / 13 / 8;
+                }
+            }
+
+            .conceptText2 {
+                grid-area: 10 / 1 / 12 / 5;
+                z-index: 2;
+                @media (max-width : 730px) {
+                    font-size: 0.7rem;
+                }
+                @media (max-width : 430px) {
+                    grid-area: 10 / 2 / 12 / 6;
+                }
+            }
+
+        }
+    }
+}

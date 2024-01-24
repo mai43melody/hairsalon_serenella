@@ -1,0 +1,45 @@
+@use 'variable' as v;
+
+header {
+    background-color: v.$palepurple;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    width: 100%;
+    height: 100px;
+    @media (max-width : 430px) {
+        padding: 0 1rem;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p,
+        h1 {
+            font-family: 'Cinzel', serif;
+            color: v.$darkpink;
+            text-transform: uppercase;
+            font-weight: 900;
+            letter-spacing: 0.05em;
+        }
+    }
+}
+
+header p {
+    font-size: 1.5rem;
+    @media (max-width : 430px) {
+        font-size: 0.8rem;
+    }
+}
+
+header h1 {
+    font-size: 3rem;
+    @media (max-width : 740px) {
+        font-size: 2.5rem;
+    }
+    @media (max-width : 430px) {
+        font-size: 1.8rem;
+    }
+}

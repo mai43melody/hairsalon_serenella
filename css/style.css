@@ -1,0 +1,1367 @@
+@charset "UTF-8";
+/*! destyle.css v4.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-tap-highlight-color: transparent;
+  /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Replaced content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none;
+  /* 1 */
+  -moz-appearance: none;
+       appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit;
+  /* 2 */
+}
+
+/**
+ * Correct cursors for clickable elements.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type=button]:disabled,
+[type=reset]:disabled,
+[type=submit]:disabled {
+  cursor: default;
+}
+
+/**
+ * Improve outlines for Firefox and unify style with input elements & buttons.
+ */
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * Correct the outline style in Safari.
+ */
+[type=search] {
+  outline-offset: -2px;
+  /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Fix font inheritance.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/**
+ * Fix appearance for Firefox
+ */
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable]:focus {
+  outline: auto;
+}
+
+/* Tables */
+/* ============================================ */
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+table {
+  border-color: inherit;
+  /* 1 */
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+/* タイトルのフォントのみ */
+/* font-family: 'Cinzel', serif; */
+img {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #ffffff;
+  color: #2F3336;
+  font-family: "Noto Serif JP", serif;
+  /* font-family: 'Sorts Mill Goudy', serif; */
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 3rem;
+}
+@media (max-width: 740px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: "Sorts Mill Goudy", serif;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.items02,
+.items01 {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: 500ms grid-template-rows ease;
+}
+
+.open {
+  grid-template-rows: 1fr;
+}
+
+header {
+  background-color: #F7F1FF;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  width: 100%;
+  height: 100px;
+}
+@media (max-width: 430px) {
+  header {
+    padding: 0 1rem;
+  }
+}
+header div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header div p,
+header div h1 {
+  font-family: "Cinzel", serif;
+  color: #BD68A1;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+header p {
+  font-size: 1.5rem;
+}
+@media (max-width: 430px) {
+  header p {
+    font-size: 0.8rem;
+  }
+}
+
+header h1 {
+  font-size: 3rem;
+}
+@media (max-width: 740px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 430px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* 見本。メニューの背景色。グラデーションなのでbackground-imageで指定 */
+.toggleButton {
+  display: none;
+}
+
+#drawerMenu ul {
+  display: flex;
+  gap: 2rem;
+  font-size: 2rem;
+  font-family: "Sorts Mill Goudy", serif;
+  height: 100%;
+  align-items: center;
+}
+@media (max-width: 1150px) {
+  #drawerMenu ul {
+    font-size: 1.5rem;
+    gap: 1rem;
+  }
+}
+
+#drawerMenu li {
+  width: -moz-fit-content;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+#drawerMenu a {
+  display: block;
+  padding: 1rem;
+  /* マウスが反応する範囲を少し広げている*/
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+}
+
+/* アンカーリンクにマウスが乗ると、他のアンカーリンクが少し薄くなる指定 */
+#drawerMenu ul:has(a:hover) a:not(:hover) {
+  opacity: 0.3;
+}
+
+@media (max-width: 930px) {
+  /* メディアクエリの値はお好みで */
+  .toggleButton {
+    position: fixed;
+    top: 25px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    /* display:none;を解除するために入れている */
+    border-radius: 5px;
+    z-index: 100;
+  }
+  .toggleButton::after {
+    content: "MENU";
+    position: absolute;
+    bottom: -0.8rem;
+    font-family: "Cinzel", serif;
+    font-size: 0.725rem;
+    font-weight: bold;
+    color: #BD68A1;
+  }
+  .toggleButton span {
+    width: 60%;
+    height: 4px;
+    display: block;
+    position: absolute;
+    left: 20%;
+    background-color: #BD68A1;
+    border-radius: 5px;
+    transition: all 0.2s linear;
+  }
+  .toggleButton span:nth-of-type(1) {
+    top: 10px;
+    transform: rotate(0);
+  }
+  .toggleButton span:nth-of-type(2) {
+    top: 18px;
+    transform: scale(1);
+  }
+  .toggleButton span:nth-of-type(3) {
+    bottom: 10px;
+    transform: rotate(0);
+  }
+  .close span:nth-of-type(1) {
+    top: 18px;
+    transform: rotate(-45deg);
+  }
+  .close span:nth-of-type(2) {
+    transform: scale(0);
+  }
+  .close span:nth-of-type(3) {
+    bottom: 18px;
+    transform: rotate(45deg);
+  }
+  #drawerMenu {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -930px;
+    transition: all 0.6s linear;
+    background-color: #FDFCFF;
+  }
+  #drawerMenu.open {
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #drawerMenu ul {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 80px 20px 20px 20px;
+    overflow: hidden;
+    text-align: center;
+    list-style-type: none;
+    border-radius: 0 0 0 10px;
+    font-family: "Cinzel", serif;
+  }
+  #drawerMenu li {
+    width: 100%;
+  }
+  #drawerMenu li a {
+    color: #BD68A1;
+    font-size: 1.75rem;
+  }
+}
+/* max-width : 930px */
+.swiper {
+  width: 100%;
+  height: calc(100vh - 100px);
+}
+@media (max-width: 600px) {
+  .swiper {
+    height: 60vh;
+  }
+}
+.swiper .swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.swiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+@media (max-width: 744px) {
+  .swiper .swiper01 img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.swiper .swiperText {
+  width: 30%;
+  height: auto;
+  position: absolute;
+  top: 80%;
+  left: 60%;
+  z-index: 100;
+}
+@media (max-width: 950px) {
+  .swiper .swiperText {
+    width: 35%;
+    top: 85%;
+  }
+}
+@media (max-width: 500px) {
+  .swiper .swiperText {
+    width: 40%;
+    left: 50%;
+  }
+}
+@media (max-width: 390px) {
+  .swiper .swiperText {
+    width: 45%;
+    left: 45%;
+  }
+}
+
+.conceptWrap {
+  background-color: #F7F1FF;
+}
+.conceptWrap .conceptText3 {
+  width: 100%;
+  text-align: center;
+  padding: 5rem 0;
+}
+@media (max-width: 800px) {
+  .conceptWrap .conceptText3 {
+    width: 80%;
+    margin: 0 auto;
+    text-align: start;
+    font-size: 0.8rem;
+  }
+}
+.conceptWrap h2 {
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+}
+.conceptWrap .conceptWrapper {
+  width: 62.5%;
+  height: auto;
+  margin: 0 auto;
+}
+@media (max-width: 730px) {
+  .conceptWrap .conceptWrapper {
+    width: 85%;
+  }
+}
+.conceptWrap .conceptWrapper .conceptBox {
+  max-width: 900px;
+  max-height: 900px;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin: 0 auto;
+}
+@media (max-width: 430px) {
+  .conceptWrap .conceptWrapper .conceptBox {
+    grid-template-rows: repeat(12, 1fr);
+  }
+}
+.conceptWrap .conceptWrapper .conceptBox .conceptImage1 {
+  grid-area: 1/1/4/5;
+  z-index: 1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+@media (max-width: 430px) {
+  .conceptWrap .conceptWrapper .conceptBox .conceptImage1 {
+    grid-area: 1/1/4/6;
+  }
+}
+.conceptWrap .conceptWrapper .conceptBox .conceptImage1 img {
+  -o-object-position: 0% 50%;
+     object-position: 0% 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.conceptWrap .conceptWrapper .conceptBox .blobs1 {
+  grid-area: 2/4/6/8;
+}
+@media (max-width: 430px) {
+  .conceptWrap .conceptWrapper .conceptBox .blobs1 {
+    grid-area: 2/3/7/8;
+  }
+}
+.conceptWrap .conceptWrapper .conceptBox .conceptText1 {
+  grid-area: 4/6/6/10;
+  z-index: 2;
+}
+@media (max-width: 730px) {
+  .conceptWrap .conceptWrapper .conceptBox .conceptText1 {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 430px) {
+  .conceptWrap .conceptWrapper .conceptBox .conceptText1 {
+    grid-area: 4/5/6/9;
+  }
+}
+.conceptWrap .conceptWrapper .conceptBox .conceptImage2 {
+  grid-area: 7/6/10/10;
+  z-index: 1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+@media (max-width: 430px) {
+  .conceptWrap .conceptWrapper .conceptBox .conceptImage2 {
+    grid-area: 7/5/10/10;
+  }
+}
+.conceptWrap .conceptWrapper .conceptBox .conceptImage2 img {
+  -o-object-position: 0% 50%;
+     object-position: 0% 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.conceptWrap .conceptWrapper .conceptBox .blobs2 {
+  grid-area: 8/3/12/7;
+}
+@media (max-width: 430px) {
+  .conceptWrap .conceptWrapper .conceptBox .blobs2 {
+    grid-area: 8/3/13/8;
+  }
+}
+.conceptWrap .conceptWrapper .conceptBox .conceptText2 {
+  grid-area: 10/1/12/5;
+  z-index: 2;
+}
+@media (max-width: 730px) {
+  .conceptWrap .conceptWrapper .conceptBox .conceptText2 {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 430px) {
+  .conceptWrap .conceptWrapper .conceptBox .conceptText2 {
+    grid-area: 10/2/12/6;
+  }
+}
+
+.menuWrap {
+  width: 100%;
+  height: auto;
+}
+.menuWrap h2 {
+  width: 100%;
+  /* height: 25vh; */
+  text-align: center;
+  padding: 3rem 0;
+}
+.menuWrap .salonImage {
+  max-width: 700px;
+  margin: 3rem auto;
+}
+@media (max-width: 700px) {
+  .menuWrap .salonImage {
+    width: 90%;
+  }
+}
+@media (max-width: 400px) {
+  .menuWrap .salonImage {
+    width: 90%;
+    height: auto;
+    aspect-ratio: 1/1;
+    margin: 1rem auto;
+  }
+}
+.menuWrap .salonImage img {
+  -o-object-position: 0% 50%;
+     object-position: 0% 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.menuWrap .salonMenu {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.menuWrap .salonMenu h3 {
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+  font-size: 1.5rem;
+}
+.menuWrap .salonMenu .salonMenuText {
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem 0 0.5rem;
+  font-size: 0.8rem;
+}
+@media (max-width: 380px) {
+  .menuWrap .salonMenu .salonMenuText {
+    width: 80%;
+    text-align: start;
+  }
+}
+.menuWrap .salonMenu .salonWrap {
+  width: 62.5%;
+  height: auto;
+  margin: 0 auto;
+  background-color: #F7F1FF;
+  border-radius: 8px;
+  padding: 1rem 2rem 3rem;
+}
+@media (max-width: 940px) {
+  .menuWrap .salonMenu .salonWrap {
+    width: 90%;
+  }
+}
+.menuWrap .salonMenu .salonWrap .cutBox,
+.menuWrap .salonMenu .salonWrap .colorBox,
+.menuWrap .salonMenu .salonWrap .permBox {
+  margin-bottom: 4rem;
+}
+.menuWrap .salonMenu .salonWrap h4 {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  border-bottom: 1.5px solid #7C8A94;
+}
+.menuWrap .salonMenu .salonWrap .salonList {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  font-weight: 400;
+  font-size: 0.85rem;
+}
+@media (max-width: 940px) {
+  .menuWrap .salonMenu .salonWrap .salonList {
+    display: block;
+  }
+}
+.menuWrap .salonMenu .salonWrap .salonList .cutList,
+.menuWrap .salonMenu .salonWrap .salonList .colorList,
+.menuWrap .salonMenu .salonWrap .salonList .permList,
+.menuWrap .salonMenu .salonWrap .salonList .otherList {
+  width: 95%;
+}
+@media (max-width: 940px) {
+  .menuWrap .salonMenu .salonWrap .salonList .cutList,
+  .menuWrap .salonMenu .salonWrap .salonList .colorList,
+  .menuWrap .salonMenu .salonWrap .salonList .permList,
+  .menuWrap .salonMenu .salonWrap .salonList .otherList {
+    width: 100%;
+  }
+}
+.menuWrap .salonMenu .salonWrap .salonList .cutList li,
+.menuWrap .salonMenu .salonWrap .salonList .colorList li,
+.menuWrap .salonMenu .salonWrap .salonList .permList li,
+.menuWrap .salonMenu .salonWrap .salonList .otherList li {
+  display: flex;
+  justify-content: space-between;
+  height: 2rem;
+  border-bottom: 0.8px solid #7C8A94;
+  align-items: flex-end;
+}
+
+.itemMenu {
+  width: 100%;
+  height: auto;
+  background-image: url(../images/svg/menuline.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  margin: 0 0 4rem;
+}
+@media (max-width: 900px) {
+  .itemMenu {
+    background-image: none;
+  }
+}
+.itemMenu h3 {
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+  font-size: 1.5rem;
+}
+.itemMenu .itemMenuText {
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem 0 3rem;
+  font-size: 0.8rem;
+}
+@media (max-width: 470px) {
+  .itemMenu .itemMenuText {
+    width: 80%;
+    text-align: start;
+  }
+}
+.itemMenu .shampooWrap {
+  width: 62.5%;
+  display: flex;
+  gap: 2rem;
+  margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .itemMenu .shampooWrap {
+    width: 85%;
+  }
+}
+@media (max-width: 900px) {
+  .itemMenu .shampooWrap {
+    display: block;
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .itemMenu .shampooLine {
+    background-image: url(../images/svg/menuline5.svg);
+    background-repeat: no-repeat;
+    background-position: 1% 50%;
+    background-size: contain;
+  }
+}
+@media (max-width: 900px) {
+  .itemMenu .shampooLine .shampooBox {
+    display: flex;
+    width: 70%;
+    height: 400px;
+    margin: 0 auto 2rem;
+  }
+}
+@media (max-width: 650px) {
+  .itemMenu .shampooLine .shampooBox {
+    display: block;
+    height: auto;
+    margin: 0 auto 4rem;
+  }
+}
+.itemMenu .shampooLine .shampooBox .shampooImage1,
+.itemMenu .shampooLine .shampooBox .shampooImage2,
+.itemMenu .shampooLine .shampooBox .shampooImage3 {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 4%;
+  overflow: hidden;
+}
+@media (max-width: 900px) {
+  .itemMenu .shampooLine .shampooBox .shampooImage1,
+  .itemMenu .shampooLine .shampooBox .shampooImage2,
+  .itemMenu .shampooLine .shampooBox .shampooImage3 {
+    width: 45%;
+    align-self: flex-start;
+  }
+}
+@media (max-width: 650px) {
+  .itemMenu .shampooLine .shampooBox .shampooImage1,
+  .itemMenu .shampooLine .shampooBox .shampooImage2,
+  .itemMenu .shampooLine .shampooBox .shampooImage3 {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+.itemMenu .shampooLine .shampooBox .shampooFlower {
+  width: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .itemMenu .shampooLine .shampooBox .shampooFlower {
+    width: 55%;
+    align-self: flex-end;
+  }
+}
+@media (max-width: 650px) {
+  .itemMenu .shampooLine .shampooBox .shampooFlower {
+    width: 100%;
+  }
+}
+.itemMenu .shampooLine .shampooBox .shampooFlower h5 {
+  font-size: 1.5rem;
+}
+@media (max-width: 450px) {
+  .itemMenu .shampooLine .shampooBox .shampooFlower h5 {
+    font-size: 1rem;
+  }
+}
+.itemMenu .shampooLine .shampooBox .shampooFlower p {
+  width: 50%;
+  font-size: 0.88rem;
+}
+@media (max-width: 450px) {
+  .itemMenu .shampooLine .shampooBox .shampooFlower p {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 900px) {
+  .itemMenu .reverse {
+    flex-direction: row-reverse;
+  }
+}
+@media (max-width: 900px) {
+  .itemMenu .shampooLine:nth-child(2) {
+    transform: scale(-1, 1);
+  }
+  .itemMenu .shampooLine:nth-child(2) .reverse {
+    transform: scale(-1, 1);
+  }
+}
+.itemMenu .flower1 {
+  width: 100%;
+  background-image: url(../images/svg/shampoo-green.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  gap: 0.5rem;
+}
+@media (max-width: 900px) {
+  .itemMenu .flower1 {
+    width: 55%;
+  }
+}
+.itemMenu .flower2 {
+  width: 100%;
+  background-image: url(../images/svg/shampoo-purple.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  gap: 0.5rem;
+}
+@media (max-width: 900px) {
+  .itemMenu .flower2 {
+    width: 55%;
+  }
+}
+.itemMenu .flower3 {
+  width: 100%;
+  background-image: url(../images/svg/shampoo-orange.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  gap: 0.5rem;
+}
+@media (max-width: 900px) {
+  .itemMenu .flower3 {
+    width: 55%;
+  }
+}
+
+.newsWrap {
+  background-color: #F7F1FF;
+}
+.newsWrap .newsWrapper {
+  width: 62.5%;
+  margin: 0 auto;
+}
+@media (max-width: 1000px) {
+  .newsWrap .newsWrapper {
+    width: 85%;
+  }
+}
+.newsWrap .newsWrapper .newsBox {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  text-align: center;
+  width: 100%;
+  padding: 3rem 0 1rem;
+}
+.newsWrap .newsWrapper .newsBox .banner {
+  width: 60%;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 780px) {
+  .newsWrap .newsWrapper .newsBox .banner {
+    width: 85%;
+  }
+}
+.newsWrap .newsWrapper .newsBox h3 {
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+  font-size: 1.5rem;
+}
+.newsWrap .newsWrapper .newsBox .topnewsWrap {
+  display: flex;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 2rem;
+  gap: 3rem;
+}
+@media (max-width: 760px) {
+  .newsWrap .newsWrapper .newsBox .topnewsWrap {
+    display: block;
+    width: 70%;
+    margin: 2rem auto;
+  }
+}
+@media (max-width: 550px) {
+  .newsWrap .newsWrapper .newsBox .topnewsWrap {
+    width: 100%;
+  }
+}
+.newsWrap .newsWrapper .newsBox .topnewsWrap .topnewsBox {
+  background-color: #FDFCFF;
+  border: 1px solid #7C8A94;
+  border-radius: 1%;
+  padding: 2rem 1.5rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 760px) {
+  .newsWrap .newsWrapper .newsBox .topnewsWrap .topnewsBox {
+    margin-bottom: 2rem;
+  }
+}
+.newsWrap .newsWrapper .newsBox .topnewsWrap .topnewsBox .topnewsImage {
+  margin-bottom: 2rem;
+  border-radius: 1%;
+  overflow: hidden;
+}
+.newsWrap .newsWrapper .newsBox .topnewsWrap .topnewsBox p {
+  width: 100%;
+  text-align: start;
+}
+@media (max-width: 550px) {
+  .newsWrap .newsWrapper .newsBox .topnewsWrap .topnewsBox p {
+    font-size: 0.8rem;
+  }
+}
+.newsWrap .newsWrapper .newsText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+  width: 100%;
+  padding: 3rem 0;
+  line-height: 1.5rem;
+}
+@media (max-width: 340px) {
+  .newsWrap .newsWrapper .newsText {
+    font-size: 0.8rem;
+  }
+}
+.newsWrap .newsWrapper .newsText ul {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+  justify-content: space-between;
+  border-bottom: 1px solid #7C8A94;
+}
+@media (max-width: 700px) {
+  .newsWrap .newsWrapper .newsText ul {
+    width: 85%;
+  }
+}
+@media (max-width: 420px) {
+  .newsWrap .newsWrapper .newsText ul {
+    padding: 0.3rem 0;
+  }
+}
+.newsWrap .newsWrapper .newsText ul li {
+  width: 50%;
+  text-align: start;
+}
+@media (max-width: 650px) {
+  .newsWrap .newsWrapper .newsText ul li {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 420px) {
+  .newsWrap .newsWrapper .newsText ul li {
+    font-size: 0.7rem;
+  }
+}
+
+.saloninfoWrap,
+.SNSWrap {
+  width: 100%;
+  height: auto;
+}
+.saloninfoWrap .saloninfoBox,
+.SNSWrap .saloninfoBox {
+  width: 62.5%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  padding: 3rem 0;
+}
+@media (max-width: 900px) {
+  .saloninfoWrap .saloninfoBox,
+  .SNSWrap .saloninfoBox {
+    width: 85%;
+    aspect-ratio: 1/1.5;
+  }
+}
+@media (max-width: 400px) {
+  .saloninfoWrap .saloninfoBox,
+  .SNSWrap .saloninfoBox {
+    width: 95%;
+    aspect-ratio: 1/1;
+  }
+}
+.saloninfoWrap .saloninfoBox iframe,
+.SNSWrap .saloninfoBox iframe {
+  width: 100%;
+}
+.saloninfoWrap .saloninfoBox p,
+.SNSWrap .saloninfoBox p {
+  line-height: 1.25rem;
+}
+@media (max-width: 470px) {
+  .saloninfoWrap .saloninfoBox p,
+  .SNSWrap .saloninfoBox p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 360px) {
+  .saloninfoWrap .saloninfoBox p,
+  .SNSWrap .saloninfoBox p {
+    width: 100%;
+    font-size: 0.7rem;
+  }
+}
+.saloninfoWrap .SNSBox,
+.SNSWrap .SNSBox {
+  width: 62.5%;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .saloninfoWrap .SNSBox,
+  .SNSWrap .SNSBox {
+    width: 100%;
+  }
+}
+.saloninfoWrap .SNSBox .XBox,
+.SNSWrap .SNSBox .XBox {
+  width: 60%;
+  margin: 2rem auto 4rem;
+}
+@media (max-width: 800px) {
+  .saloninfoWrap .SNSBox .XBox,
+  .SNSWrap .SNSBox .XBox {
+    width: 80%;
+  }
+}
+.saloninfoWrap .SNSBox .XBox .twitter-timeline.twitter-timeline-rendered,
+.SNSWrap .SNSBox .XBox .twitter-timeline.twitter-timeline-rendered {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.Button {
+  background-color: #BD68A1;
+  width: 10rem;
+  height: 3rem;
+  margin: 2rem auto;
+  text-align: center;
+  display: block;
+  border-radius: 8px;
+  color: #fff;
+  transition: 0.4s;
+  cursor: pointer;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.Button:hover {
+  color: #BD68A1;
+  background-color: #fff;
+  border: 1px solid #BD68A1;
+}
+
+footer {
+  background-color: #F7F1FF;
+  height: 150px;
+}
+@media (max-width: 470px) {
+  footer {
+    height: 250px;
+  }
+}
+footer .footerSNS {
+  width: 62.5%;
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+footer .footerSNS .footerIcon {
+  width: 3rem;
+  height: 3rem;
+}
+footer .footerSNS .footerLogo {
+  width: 5rem;
+  height: 5rem;
+}
+footer p {
+  width: 62.5%;
+  height: 30%;
+  text-align: center;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */
