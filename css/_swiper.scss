@@ -130,3 +130,24 @@
 
     }
 }
+
+/* アニメーションのキーフレーム設定 */
+@keyframes fade-text {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* テキストのアニメーション設定 */
+.swiper-slide-active .swiperText {
+    animation-name: fade-text;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+}

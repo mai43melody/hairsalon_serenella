@@ -469,7 +469,6 @@ header div h1 {
   color: #BD68A1;
   text-transform: uppercase;
   font-weight: 900;
-  letter-spacing: 0.05em;
 }
 
 header p {
@@ -682,6 +681,25 @@ header h1 {
     width: 45%;
     left: 45%;
   }
+}
+
+/* アニメーションのキーフレーム設定 */
+@keyframes fade-text {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+/* テキストのアニメーション設定 */
+.swiper-slide-active .swiperText {
+  animation-name: fade-text;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
 }
 
 .conceptWrap {
