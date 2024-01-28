@@ -387,8 +387,6 @@ th {
   font-weight: bold;
 }
 
-/* タイトルのフォントのみ */
-/* font-family: 'Cinzel', serif; */
 img {
   width: 100%;
   height: 100%;
@@ -465,10 +463,10 @@ header div {
 }
 header div p,
 header div h1 {
-  font-family: "Cinzel", serif;
+  font-family: "Josefin Sans", sans-serif;
   color: #BD68A1;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 300;
 }
 
 header p {
@@ -1076,6 +1074,8 @@ header h1 {
 }
 .itemMenu .shampooLine .shampooBox .shampooFlower h5 {
   font-size: 1.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
 }
 @media (max-width: 450px) {
   .itemMenu .shampooLine .shampooBox .shampooFlower h5 {
